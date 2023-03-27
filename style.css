@@ -12,9 +12,11 @@ body {
     display: flex;
     flex-direction: column;
     border: 3px solid blue;
-    background-image: url('https://images.unsplash.com/photo-1575141251061-c8259641ed63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU2fHxiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-image: url('https://images.unsplash.com/photo-1679834832001-b2edc4a5ad14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-position:50% 50%;
+    image-rendering: -moz-crisp-edges; 
 }
 
 .right-side{
@@ -25,10 +27,15 @@ body {
 
 .title-container{
     display: flex;
-    background-color: black;
-    opacity: 20%;
+    background-color: rgba(0, 0, 0, .4);
+    align-items: center;
+    justify-content: center;
 }
 
 .odin-title{
     color: white
+}
+
+.odin-logo{
+    width: 100px;
 }

@@ -5,6 +5,10 @@
     --base-font: 'Roboto',sans-serif;
     --norse-font: 'Norse', sans-serif;
     --label-font: 'Montserrat', sans-serif;
+    --galaxy-blue: #00344c;
+    --bright-red: #ff000d;
+    --background-color: #F5F5F5;
+    --white: #ffffff;
 }
 
 body {
@@ -30,7 +34,7 @@ body {
 .right-side{
     margin: 0;
     flex: 1;
-    background-color: #F5F5F5;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,9 +49,9 @@ body {
 }
 
 .odin-title{
-    color: #ffffff;
+    color: var(--white);
     font-family: var(--norse-font);
-    font-size: 85px;
+    font-size: 100px;
     margin: 0;
 }
 
@@ -59,7 +63,7 @@ body {
 
 footer,
 footer a {
-    color: #ffffff;
+    color: var(--white);
     opacity: 90%;
     font-size: 14px;
     font-family: sans-serif;
@@ -106,7 +110,7 @@ footer a {
 
 .right-middle{
     flex: .7;
-    background-color: #ffffff;
+    background-color: var(--white);
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
@@ -123,7 +127,7 @@ footer a {
 
 .right-bottom a {
     text-decoration: none;
-    color: #00344c
+    color: var(--galaxy-blue)
 }
 
 .italic {
@@ -158,21 +162,21 @@ input[type=password]{
 }
 
 input:focus{
-    border : 2px solid #00344c;
+    border : 2px solid var(--galaxy-blue);
     outline: 0;
-    box-shadow: 1px 3px 10px #00344c;
+    box-shadow: 1px 3px 10px var(--galaxy-blue);
 }
 
 input:invalid:focus{
-    border : 3px solid red;
-    box-shadow: 1px 3px 10px red;
+    border : 3px solid var(--bright-red);
+    box-shadow: 1px 3px 10px var(--bright-red);
     outline: 0;
 }
 
 [type=submit]:active{
-    background-color: #ffffff;
-    border : 3px solid #00344c;
-    color: #00344c;
+    background-color: var(--white);
+    border : 3px solid var(--galaxy-blue);
+    color: var(--galaxy-blue);
 }
 
 button{
@@ -181,8 +185,8 @@ button{
     width: 230px;
     border: 0;
     border-radius: 7px;
-    background-color: #00344c;
-    color: #ffffff;
+    background-color: var(--galaxy-blue);
+    color: var(--white);
     font-size: 18px;
     font-family: var(--base-font);
     padding: px;

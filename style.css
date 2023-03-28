@@ -1,3 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root{
+    --base-font: 'Roboto',sans-serif;
+    --norse: 'Norse', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -11,21 +18,24 @@ body {
     flex: .7;
     display: flex;
     flex-direction: column;
-    border: 3px solid blue;
-    background-image: url('https://images.unsplash.com/photo-1679834832001-b2edc4a5ad14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+    justify-content: space-between;
+    background-image: url('https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1038&q=80');
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position:50% 50%;
-    image-rendering: -moz-crisp-edges; 
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .right-side{
     margin: 0;
     flex: 1;
-    border: 3px solid red;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title-container{
+    margin-top: 25vh;
     display: flex;
     background-color: rgba(0, 0, 0, .4);
     align-items: center;
@@ -33,9 +43,78 @@ body {
 }
 
 .odin-title{
-    color: white
+    color: #ffffff;
+    font-family: var(--norse);
+    font-size: 85px;
+    margin: 0;
 }
 
 .odin-logo{
     width: 100px;
+    margin: 10px;
+}
+
+a,
+footer {
+    color: #ffffff;
+    opacity: 90%;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.source{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-line-container{
+    display: flex;
+    gap: 150px;
+    margin-top: 20px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-top,
+.right-bottom,
+.input-wrapper{
+    margin-left: 50px;
+}
+
+.right-top{
+    flex:1;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-top > h1{
+    font-size: 31px;
+    font-family: var(--base-font);
+    font-weight: 500;
+}
+
+.right-middle{
+    flex: .7;
+    background-color: #ffffff;
+}
+
+.right-bottom{
+    flex: 1;
+}
+
+.italic {
+    display: inline;
+    font-style: italic;
+}
+
+legend{
+    font-family: var(--base-font);
+    font-size: 25px;
 }

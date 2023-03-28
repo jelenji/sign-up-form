@@ -1,8 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/norse');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root{
     --base-font: 'Roboto',sans-serif;
-    --norse: 'Norse', sans-serif;
+    --norse-font: 'Norse', sans-serif;
+    --label-font: 'Montserrat', sans-serif;
 }
 
 body {
@@ -44,7 +46,7 @@ body {
 
 .odin-title{
     color: #ffffff;
-    font-family: var(--norse);
+    font-family: var(--norse-font);
     font-size: 85px;
     margin: 0;
 }
@@ -54,8 +56,9 @@ body {
     margin: 10px;
 }
 
-a,
-footer {
+
+footer,
+footer a {
     color: #ffffff;
     opacity: 90%;
     font-size: 14px;
@@ -78,6 +81,7 @@ footer {
 .input-container{
     display: flex;
     flex-direction: column;
+    gap: 2px;
 }
 
 .right-top,
@@ -103,10 +107,23 @@ footer {
 .right-middle{
     flex: .7;
     background-color: #ffffff;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
 }
 
 .right-bottom{
     flex: 1;
+}
+
+.right-bottom > h1{
+    font-family: var(--base-font);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.right-bottom a {
+    text-decoration: none;
+    color: #00344c
 }
 
 .italic {
@@ -118,3 +135,37 @@ legend{
     font-family: var(--base-font);
     font-size: 25px;
 }
+
+label{
+    font-family: var(--label-font);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .15em;
+}
+
+input{
+    height: 30px;
+    width: 300px;
+    border: 2px solid #E5E7EB;
+    border-radius: 7px;
+
+}
+
+input:focus{
+    border : 3px solid #00344c;
+    outline: 0;
+}
+
+button{
+    margin-top: 40px;
+    height: 45px;
+    width: 230px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #00344c;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: var(--base-font);
+    padding: px;
+}
+

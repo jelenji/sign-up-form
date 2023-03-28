@@ -41,22 +41,22 @@
                         </div>
                         <div class="input-line-container">
                             <div class="input-container">
-                                <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email">
+                                <label for="email">*EMAIL</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="input-container">
                                 <label for="number">PHONE NUMBER</label>
-                                <input type="text" id="number" name="number">
+                                <input type="text" id="number" name="number" onkeypress="return /[0-9]/i.test(event.key)">
                             </div>
                         </div>
                         <div class="input-line-container">
                             <div class="input-container">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password">
+                                <label for="password">*PASSWORD</label>
+                                <input type="password" id="password" name="password" minlength="5" required>
                             </div>
                             <div class="input-container">
-                                <label for="confirm">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm">
+                                <label for="confirm">*CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm" minlength="5" required>
                             </div>
                         </div>  
                     </form>

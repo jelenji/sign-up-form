@@ -17,7 +17,7 @@ body {
 }
 
 .left-side{
-    flex: .7;
+    flex: .5;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -107,7 +107,7 @@ footer a {
 .right-middle{
     flex: .7;
     background-color: #ffffff;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2)
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .right-bottom{
@@ -147,13 +147,32 @@ input{
     height: 30px;
     width: 300px;
     border: 2px solid #E5E7EB;
-    border-radius: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--base-font);
 
 }
 
+input[type=password]{
+    font-size: 22px;
+}
+
 input:focus{
-    border : 3px solid #00344c;
+    border : 2px solid #00344c;
     outline: 0;
+    box-shadow: 1px 3px 10px #00344c;
+}
+
+input:invalid:focus{
+    border : 3px solid red;
+    box-shadow: 1px 3px 10px red;
+    outline: 0;
+}
+
+[type=submit]:active{
+    background-color: #ffffff;
+    border : 3px solid #00344c;
+    color: #00344c;
 }
 
 button{
@@ -168,4 +187,6 @@ button{
     font-family: var(--base-font);
     padding: px;
 }
+
+
 
